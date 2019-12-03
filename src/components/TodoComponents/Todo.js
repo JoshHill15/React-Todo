@@ -2,11 +2,10 @@ import React from "react"
 import "./Todo.css"
 
 const Todo = props => {
-    console.log(props)
     const { task, completed } = props.cv
     return (
-        <div className = {completed === true ? "comp" : ""} >
-            <p onClick = {() => props.toggle(task)}>{task}</p>
+        <div className = {completed === true ? "comp" : ""} onClick = {() => props.toggle(task)} >
+            <p className = "item">{task}</p>
         </div>
     )
 }

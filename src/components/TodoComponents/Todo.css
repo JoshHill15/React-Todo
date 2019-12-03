@@ -1,3 +1,15 @@
 .comp{
     text-decoration: line-through;
 }
+.all{
+    background: lightgray;
+    width:50%;
+    margin: 0 auto;
+
+}
+.items{
+    width:30%;
+    padding: 2%;
+    display:flex;
+    justify-content: center;
+}

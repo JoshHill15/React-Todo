@@ -15,6 +15,7 @@ class TodoForm extends React.Component {
         })
     }
 
+    
     handleSubmit = e => {
         e.preventDefault()
         this.props.addItem(this.state.newItemName)
@@ -25,7 +26,6 @@ class TodoForm extends React.Component {
         
     render(){
         return (
-            <div>
                <form onSubmit = {this.handleSubmit}>
                 <input 
                         type = "text"
@@ -37,9 +37,9 @@ class TodoForm extends React.Component {
                     <button type = "submit">Add Todo</button>
                     <button onClick = {this.props.removeItem} type = "submit">Clear Completed</button>   
                 </form>     
-            </div>
         )
     }
 }
 
 export default TodoForm
+
